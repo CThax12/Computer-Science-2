@@ -1,10 +1,16 @@
+# I use a for loop and start with 2 then divide by every number up until the entered one. This checks to see if any number can divide into it and prove it is not a prime number.
+# I also added a function to list out the factors for numbers that are not prime.
+
+
 #(make an is prime function) Make a function for testing whether a number is prime.
+
+
 
 # Prints out the list of factors.
 def listFactors(number):
     factors = 'Factors: '
     
-    for j in range(2, number-1):
+    for j in range(2, number):
         if (number % j == 0):
             factors += str(j) + ','
     print(factors.rstrip(','))       
