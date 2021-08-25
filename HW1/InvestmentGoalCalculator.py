@@ -1,6 +1,11 @@
 
 # Write a function that computes future investment value at a given interest rate for a specified number of years.
 
+# I get the principal, rate, years, and compounding frequency from the user and then I plug it into the compound interest formula.
+# I use the for loop to have it calculate the amounts for the next 30 years.
+
+
+
 def futureInvestmentValue(principal, rate, years, frequency):
     
     value = principal * (1 + rate/frequency)**(years*frequency)
