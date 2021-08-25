@@ -1,3 +1,6 @@
+# In this program, I used the Babylonian Method to calculate the square root of different numbers. Basically, I am taking a number higher and lower than the entered number.
+# Then, the loop closes the gap between them until it finally calculates the square root.
+
 #Build a function to provide the square root of a number. 
 
 def squareRoot(num):
