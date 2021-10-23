@@ -1,0 +1,19 @@
+import csv
+
+fileName = input()
+
+with open(fileName, "r") as f:
+    file = f.readlines()
+    category = []
+    description = []
+    item = []
+    availability = []
+    
+    for i in range(0, len(file)):
+        info = file[i].split("\t")
+        
+        if info[3].strip() == "Available":
+            print("{} ({}) -- {}".format(info[1], info[0], info[2]))
+    
+     
+        
